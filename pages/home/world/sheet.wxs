@@ -1,0 +1,24 @@
+var startY=0;
+var lastY=300;
+
+function touchstart(event,ins){
+  console.log("touchStart");
+  startY=event.touches[0].pageY;
+}
+
+function touchmove(event,ins){
+  var pageY=event.touches[0].pageY
+  var nowY=pageY-startY+lastY;
+  startY=pageY;
+  lastY=nowY;
+  console.log(nowY);
+  ins.selectComponent("#contentSheet").setStyle({
+    top:nowY+'px',
+    height:'calc(100vh - '+nowY+'px )',
+  })
+}
+
+module.exports={
+  touchstart: touchstart,
+  touchmove: touchmove,
+}

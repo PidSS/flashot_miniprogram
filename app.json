@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/home/world/world",
+    "pages/home/following/following",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

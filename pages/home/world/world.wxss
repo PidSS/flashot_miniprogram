@@ -1,0 +1,40 @@
+.staticUnions{
+  position: fixed;
+  display: flex;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  margin:0rpx 80rpx 60rpx;
+}
+
+.staticUnions>view{
+  width: 120rpx;
+  margin: auto;
+  text-align: center;
+  line-height: 35rpx;
+  font-size: 14px;
+}
+
+.staticUnions image{
+  margin: auto;
+  max-width: 100%;
+  max-height: 70rpx;
+}
+
+#unions1{
+  top: 220rpx;
+}
+
+#unions2{
+  top: 380rpx;
+}
+
+#contentSheet{
+  top:300px;
+  margin: 0;
+  padding: 25px;
+  width: 100%;
+  height: calc(100vh - 160px);
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
