@@ -1,60 +1,36 @@
-<!--index.wxml-->
-<wxs module="sheet" src="./sheet.wxs"></wxs>
-<template name="union">
-  <view class="unions">
-    <image src="{{unionImg}}" mode="aspectFit"></image>
-    <text>{{unionName}}</text>
+<!--pages/home/world/world.wxml-->
+<view id="outerSheet">
+  <view class="smallTab">世界</view>
+  <view class="smallTab">我的</view>
+  <view id="innerSheet">
+    <swiper id="banner" indicator-dots="true" indicator-color="rgba(255,255,255,0.4)" indicator-active-color="rgba(2255,255,255,0.7)" autoplay="true" circular="true">
+      <swiper-item style="background-color: rgba(0,170,144,0.3);">Banner A</swiper-item>
+      <swiper-item style="background-color: rgba(0, 108, 170, 0.3);">Banner B</swiper-item>
+    </swiper>
+    <view id="entranceSheet">
+      <view wx:for="{{entranceUnions}}" class="unions">
+        <image src="{{item.icon}}" mode="aspectFit"></image>
+        <view>{{item.name}}</view>
+      </view>
+    </view>
+    <view class="card" wx:for="{{cardInfo}}">
+      <view class="infoBlock">
+        <image src="{{item.cmtInfo.icon}}"mode="aspectFit"></image>
+        <view>
+          <view>
+            <view>{{item.cmtInfo.name}}社区</view>
+            <view>成员: {{item.cmtInfo.members}}</view>
+          </view>
+          <view>{{item.user.name}}</view>
+        </view>
+      </view>
+      <image src="{{item.img}}" mode="aspectFit" class="mainPic"></image>
+      <view class="cardText">{{item.text}}</view>
+      <view class="bottomBox">
+        <view id="likes">点赞：{{item.likes}}</view>
+        <view id="follows">跟进：{{item.follows}}</view>
+        <view id="comments">评论：{{item.comments}}</view>
+      </view>
+    </view>
   </view>
-</template>
-<view class="staticUnions" id="unions1">
-  <template is="union" data="{{...unions}}"></template>
-  <template is="union" data="{{...unions}}"></template>
-  <template is="union" data="{{...unions}}"></template>
-  <template is="union" data="{{...unions}}"></template>
-</view>
-<view class="staticUnions" id="unions2">
-  <template is="union" data="{{...unions}}"></template>
-  <template is="union" data="{{...unions}}"></template>
-  <template is="union" data="{{...unions}}"></template>
-  <template is="union" data="{{...unions}}"></template>
-</view>
-
-
-<view id="contentSheet"
-  style="position:fixed; overflow-y:{{contentSheet.overflowY}};"
-  bind:touchstart="{{sheet.touchstart}}"
-  bind:touchmove="{{sheet.touchmove}}"
-  >
-  <image src="{{stickyTestImg}}"></image>
-  <view style="display:block">{{contentSheet.height}}</view>
-  <view style="display:block">{{contentSheet.top}}</view>
-  <view style="display:block">{{contentSheet.position}}</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
-  <view style="display:block">TEST</view>
 </view>

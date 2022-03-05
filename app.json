@@ -7,7 +7,8 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationStyle": "custom",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#f4f4f4"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
