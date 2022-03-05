@@ -22,6 +22,10 @@ Page({
       icon:"../../images/testicon.png",
       link:"",
     }],
+    bannerImg:[
+      "../../images/92616904_p0.png",
+      "../../images/92893443_p0.jpeg",
+    ],
     cardInfo:[{
       cmtInfo:{
         icon:"../../images/test_community_icon.png",
@@ -286,7 +290,7 @@ Page({
         name:"匿名用户",
         identity:"anons",
       },
-      img:["../../images/demoImg01.jpeg"],
+      img:["../../images/QQ20211108-0.jpg"],
       text:"这个塞尔达画得可太彳亍了，爱了家人们",
       likes:"312",
       follows:"27",

@@ -4,8 +4,9 @@
   <view class="smallTab">我的</view>
   <view id="innerSheet">
     <swiper id="banner" indicator-dots="true" indicator-color="rgba(255,255,255,0.4)" indicator-active-color="rgba(2255,255,255,0.7)" autoplay="true" circular="true">
-      <swiper-item style="background-color: rgba(0,170,144,0.3);">Banner A</swiper-item>
-      <swiper-item style="background-color: rgba(0, 108, 170, 0.3);">Banner B</swiper-item>
+      <swiper-item wx:for="{{bannerImg}}">
+        <image src="{{item}}" mode="aspectFill"></image>
+      </swiper-item>
     </swiper>
     <view id="entranceSheet">
       <view wx:for="{{entranceUnions}}" class="unions">
