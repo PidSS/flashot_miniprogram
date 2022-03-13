@@ -1,0 +1,69 @@
+<!--pages/communities/communities.wxml-->
+<searchBar></searchBar>
+<view id="outerSheet">
+  <view class="decorationLine"></view>
+  <view id="innerSheet">
+
+    <!--主内容-->
+    <!--我的社区-->
+    <view class="card" id="cardMyCmt">
+      <view>我的社区</view>
+      <scroll-view class="groove" scroll-x="ture" enhanced="true" show-scrollbar="false">
+        <view class="scroll-space"></view>
+        <view class="scroll-item">
+          <image mode="aspectFill"></image>
+          <view>基础学部基础学社区</view>
+          <view>成员：306</view>
+          <view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</view>
+        </view>
+        <view class="scroll-item">
+          <image mode="aspectFill"></image>
+          <view>基础学部基础学社区</view>
+          <view>成员：306</view>
+          <view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</view>
+        </view><view class="scroll-item">
+          <image mode="aspectFill"></image>
+          <view>基础学部基础学社区</view>
+          <view>成员：306</view>
+          <view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</view>
+        </view>
+        <view class="scroll-space"></view>
+      </scroll-view>
+    </view>
+
+    <!--我关注的-->
+    <view class="card" id="cardMyDescriptions">
+      <view>我的社区</view>
+      <scroll-view class="groove" scroll-x="ture" enhanced="true" show-scrollbar="false">
+        <view class="scroll-space"></view>
+        <view class="scroll-item">
+          <image mode="aspectFill"></image>
+          <view>基础学部基础学社区</view>
+          <view>成员：306</view>
+          <view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</view>
+        </view>
+        <view class="scroll-item">
+          <image mode="aspectFill"></image>
+          <view>基础学部基础学社区</view>
+          <view>成员：306</view>
+          <view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</view>
+        </view><view class="scroll-item">
+          <image mode="aspectFill"></image>
+          <view>基础学部基础学社区</view>
+          <view>成员：306</view>
+          <view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</view>
+        </view>
+        <view class="scroll-space"></view>
+      </scroll-view>
+    </view>
+    <!--全列表-->
+    <view class="card" id="cmtBrowser">
+      <view id="browserContainer">
+        <view id="search"></view>
+      </view>
+      <view class="sideTableContainer">
+       <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" class="sideTable">分类</view>
+      </view>
+    </view>
+  </view>
+</view>

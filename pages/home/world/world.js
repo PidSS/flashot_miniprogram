@@ -7,28 +7,32 @@ Page({
   data: {
     entranceUnions:[{
       name:"排行榜",
-      icon:"../../images/testicon.png",
+      icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/testicon.png",
       link:"",
     },{
       name:"测试2",
-      icon:"../../images/testicon.png",
+      icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/testicon.png",
       link:"",
     },{
       name:"测试3",
-      icon:"../../images/testicon.png",
+      icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/testicon.png",
       link:"",
     },{
       name:"测试4",
-      icon:"../../images/testicon.png",
+      icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/testicon.png",
       link:"",
     }],
-    bannerImg:[
-      "../../images/92616904_p0.png",
-      "../../images/92893443_p0.jpeg",
+    bannerImg:[{
+      img:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/92616904_p0.png",
+      link:"",
+    },{
+      img:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/92893443_p0.jpeg",
+      link:"",
+    }
     ],
     cardInfo:[{
       cmtInfo:{
-        icon:"../../images/test_community_icon.png",
+        icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/test_community_icon.png",
         name:"B02",
         members:"1328",
       },
@@ -36,238 +40,14 @@ Page({
         name:"匿名用户",
         identity:"anons",
       },
-      img:["../../images/demoImg01.jpeg"],
-      text:"这个塞尔达画得可太彳亍了，爱了家人们",
-      likes:"312",
-      follows:"27",
-      comments:"36",
-    },{
-      name:"排行榜",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试2",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试3",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试4",
-      icon:"../../images/testicon.png",
-      link:"",
-    }],
-    cardInfo:[{
-      cmtInfo:{
-        icon:"../../images/test_community_icon.png",
-        name:"B02",
-        members:"1328",
-      },
-      user:{
-        name:"匿名用户",
-        identity:"anons",
-      },
-      img:["../../images/demoImg01.jpeg"],
-      text:"这个塞尔达画得可太彳亍了，爱了家人们",
-      likes:"312",
-      follows:"27",
-      comments:"36",
-    },{
-      name:"排行榜",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试2",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试3",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试4",
-      icon:"../../images/testicon.png",
-      link:"",
-    }],
-    cardInfo:[{
-      cmtInfo:{
-        icon:"../../images/test_community_icon.png",
-        name:"B02",
-        members:"1328",
-      },
-      user:{
-        name:"匿名用户",
-        identity:"anons",
-      },
-      img:["../../images/demoImg01.jpeg"],
-      text:"这个塞尔达画得可太彳亍了，爱了家人们",
-      likes:"312",
-      follows:"27",
-      comments:"36",
-    },{
-      name:"排行榜",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试2",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试3",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试4",
-      icon:"../../images/testicon.png",
-      link:"",
-    }],
-    cardInfo:[{
-      cmtInfo:{
-        icon:"../../images/test_community_icon.png",
-        name:"B02",
-        members:"1328",
-      },
-      user:{
-        name:"匿名用户",
-        identity:"anons",
-      },
-      img:["../../images/demoImg01.jpeg"],
-      text:"这个塞尔达画得可太彳亍了，爱了家人们",
-      likes:"312",
-      follows:"27",
-      comments:"36",
-    },{
-      name:"排行榜",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试2",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试3",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试4",
-      icon:"../../images/testicon.png",
-      link:"",
-    }],
-    cardInfo:[{
-      cmtInfo:{
-        icon:"../../images/test_community_icon.png",
-        name:"B02",
-        members:"1328",
-      },
-      user:{
-        name:"匿名用户",
-        identity:"anons",
-      },
-      img:["../../images/demoImg01.jpeg"],
-      text:"这个塞尔达画得可太彳亍了，爱了家人们",
-      likes:"312",
-      follows:"27",
-      comments:"36",
-    },{
-      name:"排行榜",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试2",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试3",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试4",
-      icon:"../../images/testicon.png",
-      link:"",
-    }],
-    cardInfo:[{
-      cmtInfo:{
-        icon:"../../images/test_community_icon.png",
-        name:"B02",
-        members:"1328",
-      },
-      user:{
-        name:"匿名用户",
-        identity:"anons",
-      },
-      img:["../../images/demoImg01.jpeg"],
-      text:"这个塞尔达画得可太彳亍了，爱了家人们",
-      likes:"312",
-      follows:"27",
-      comments:"36",
-    },{
-      name:"排行榜",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试2",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试3",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试4",
-      icon:"../../images/testicon.png",
-      link:"",
-    }],
-    cardInfo:[{
-      cmtInfo:{
-        icon:"../../images/test_community_icon.png",
-        name:"B02",
-        members:"1328",
-      },
-      user:{
-        name:"匿名用户",
-        identity:"anons",
-      },
-      img:["../../images/demoImg01.jpeg"],
-      text:"这个塞尔达画得可太彳亍了，爱了家人们",
-      likes:"312",
-      follows:"27",
-      comments:"36",
-    },{
-      name:"排行榜",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试2",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试3",
-      icon:"../../images/testicon.png",
-      link:"",
-    },{
-      name:"测试4",
-      icon:"../../images/testicon.png",
-      link:"",
-    }],
-    cardInfo:[{
-      cmtInfo:{
-        icon:"../../images/test_community_icon.png",
-        name:"B02",
-        members:"1328",
-      },
-      user:{
-        name:"匿名用户",
-        identity:"anons",
-      },
-      img:["../../images/demoImg01.jpeg"],
+      img:["cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/demoImg01.jpeg"],
       text:"这个塞尔达画得可太彳亍了，爱了家人们",
       likes:"312",
       follows:"27",
       comments:"36",
     },{
       cmtInfo:{
-        icon:"../../images/test_community_icon.png",
+        icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/test_community_icon.png",
         name:"B02",
         members:"1328",
       },
@@ -275,14 +55,14 @@ Page({
         name:"匿名用户",
         identity:"anons",
       },
-      img:["../../images/zeen-chin-005.jpeg"],
+      img:["cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/zeen-chin-005.jpeg"],
       text:"这个塞尔达画得可太彳亍了，爱了家人们",
       likes:"312",
       follows:"27",
       comments:"36",
     },{
       cmtInfo:{
-        icon:"../../images/test_community_icon.png",
+        icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/test_community_icon.png",
         name:"B02",
         members:"1328",
       },
@@ -290,14 +70,14 @@ Page({
         name:"匿名用户",
         identity:"anons",
       },
-      img:["../../images/QQ20211108-0.jpg"],
+      img:["cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/QQ20211108-0.jpg"],
       text:"这个塞尔达画得可太彳亍了，爱了家人们",
       likes:"312",
       follows:"27",
       comments:"36",
     },{
       cmtInfo:{
-        icon:"../../images/test_community_icon.png",
+        icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/test_community_icon.png",
         name:"B02",
         members:"1328",
       },
@@ -305,14 +85,14 @@ Page({
         name:"匿名用户",
         identity:"anons",
       },
-      img:["../../images/demoImg01.jpeg"],
+      img:["cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/demoImg01.jpeg"],
       text:"这个塞尔达画得可太彳亍了，爱了家人们",
       likes:"312",
       follows:"27",
       comments:"36",
     },{
       cmtInfo:{
-        icon:"../../images/test_community_icon.png",
+        icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/test_community_icon.png",
         name:"B02",
         members:"1328",
       },
@@ -320,14 +100,14 @@ Page({
         name:"匿名用户",
         identity:"anons",
       },
-      img:["../../images/demoImg01.jpeg"],
+      img:["cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/demoImg01.jpeg"],
       text:"这个塞尔达画得可太彳亍了，爱了家人们",
       likes:"312",
       follows:"27",
       comments:"36",
     },{
       cmtInfo:{
-        icon:"../../images/test_community_icon.png",
+        icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/test_community_icon.png",
         name:"B02",
         members:"1328",
       },
@@ -335,14 +115,14 @@ Page({
         name:"匿名用户",
         identity:"anons",
       },
-      img:["../../images/demoImg01.jpeg"],
+      img:["cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/demoImg01.jpeg"],
       text:"这个塞尔达画得可太彳亍了，爱了家人们",
       likes:"312",
       follows:"27",
       comments:"36",
     },{
       cmtInfo:{
-        icon:"../../images/test_community_icon.png",
+        icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/test_community_icon.png",
         name:"B02",
         members:"1328",
       },
@@ -350,14 +130,14 @@ Page({
         name:"匿名用户",
         identity:"anons",
       },
-      img:["../../images/demoImg01.jpeg"],
+      img:["cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/demoImg01.jpeg"],
       text:"这个塞尔达画得可太彳亍了，爱了家人们",
       likes:"312",
       follows:"27",
       comments:"36",
     },{
       cmtInfo:{
-        icon:"../../images/test_community_icon.png",
+        icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/test_community_icon.png",
         name:"B02",
         members:"1328",
       },
@@ -365,14 +145,14 @@ Page({
         name:"匿名用户",
         identity:"anons",
       },
-      img:["../../images/demoImg01.jpeg"],
+      img:["cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/demoImg01.jpeg"],
       text:"这个塞尔达画得可太彳亍了，爱了家人们",
       likes:"312",
       follows:"27",
       comments:"36",
     },{
       cmtInfo:{
-        icon:"../../images/test_community_icon.png",
+        icon:"cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/test_community_icon.png",
         name:"B02",
         members:"1328",
       },
@@ -380,7 +160,7 @@ Page({
         name:"匿名用户",
         identity:"anons",
       },
-      img:["../../images/demoImg01.jpeg"],
+      img:["cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/demoImg01.jpeg"],
       text:"这个塞尔达画得可太彳亍了，爱了家人们",
       likes:"312",
       follows:"27",

@@ -1,0 +1,236 @@
+/* pages/home/post/post.wxss */
+page{
+  background-color: #F4F4F4;
+}
+
+#infoBoxes{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+#cmtInfoBox, #userInfoBox{
+  width: 100%;
+  height: 32px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#cmtInfoBox{
+  flex-direction: row;
+}
+
+#userInfoBox{
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+#infoBoxes image{
+  border-radius: 16px;
+  height: 32px;
+  width: 32px;
+}
+
+#infoBoxes > view > view > view{
+  color: rgb(157,157,157);
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+#infoBoxes > view > view > view:first-child{
+  color: rgb(112,112,112);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#cardA{
+  overflow: hidden;
+  min-height: 660rpx;
+  padding-bottom: 24px;
+  z-index: 100;
+}
+
+#cardA > image{
+  position: static;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#firstImg{
+  border-radius: 10px 10px 0 0;
+}
+
+#lastImg{
+  border-radius: 0 0 10px 10px;
+}
+.space{
+  height: 660rpx;
+}
+
+.devideLine{
+  height: 2px;
+  width: 500rpx;
+  border-radius: 1.5px;
+  margin: 8px auto 8px;
+  background-color: rgba(0,0,0,0.16);
+}
+
+.text{
+  color: rgb(112,112,112);
+  font-size: 14px;
+  margin: 12px auto 12px;
+  padding: 0 6px;
+}
+
+#infoStamp{
+  width: 100%;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#infoStamp view{
+  width: 100%;
+  margin: 0 6px;
+  color: rgb(157,157,157);
+  font-size: 12px;
+  line-height: 12px;
+}
+
+#infoStamp view:first-child +view{
+  text-align: right;
+}
+
+.bottomBox{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.bottomBox view{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#likes, #forward{
+  margin-top: 6px;
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
+}
+
+#likes{
+  border-style: none solid none none;
+}
+
+#forward{
+  border-style: none none none solid;
+}
+
+#cardB{
+  position: relative;
+  margin-top: -24px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  z-index: 10;
+}
+
+#statusBox{
+  width: 100%;
+  height: 22px;
+  margin-top: 28px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#statusBox text{
+  color: rgb(0, 170, 144);
+}
+
+#statusBox view:first-child{
+  color:rgb(157,157,157);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#statusBox view:first-child + view{
+  width: 48px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.06);
+  color: rgb(0, 170, 144);
+  font-size: 12px;
+  line-height: 22px;
+  border-radius: 10px;
+}
+
+.statusLine{
+  width: 100%;
+  height: 22px;
+  margin-top: 18px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.status + view{
+  width: 96px;
+  margin-left: 8px;
+  font-size: 14px;
+  color: rgb(157,157,157);
+}
+
+.dot{
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+}
+
+.status{
+  margin-left: 6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.posterInfo{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.posterInfo image{
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+}
+
+.posterInfo view{
+  margin-left: 4px;
+  color: rgb(145,145,145);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.statusText{
+  margin: 8px 0 14px 26px;
+  font-size: 14px;
+  color: rgb(112, 112, 112);
+}

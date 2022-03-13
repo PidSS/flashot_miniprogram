@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/communities/communities",
+    "pages/post/post",
     "pages/home/world/world",
     "pages/home/following/following",
     "pages/logs/logs"
@@ -9,6 +11,9 @@
     "navigationStyle": "custom",
     "navigationBarTextStyle":"black",
     "backgroundColor": "#f4f4f4"
+  },
+  "usingComponents": {
+    "searchBar": "/searchBar/searchBar"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

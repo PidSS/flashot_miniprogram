@@ -1,11 +1,29 @@
 <!--pages/home/world/world.wxml-->
+<wxs module="imgJudge">
+var imgMode = function(img){
+  console.log(1);
+  wx.getImageInfo({
+    src: img,
+    success: function(res) {
+      if (res.height>res.width){
+        return "widthFix";
+      }
+      else return "heightFix";
+    }
+  });
+}
+module.exports = {
+  imgMode:imgMode
+}
+</wxs>
+<searchBar></searchBar>
 <view id="outerSheet">
   <view class="smallTab">世界</view>
   <view class="smallTab">我的</view>
   <view id="innerSheet">
     <swiper id="banner" indicator-dots="true" indicator-color="rgba(255,255,255,0.4)" indicator-active-color="rgba(2255,255,255,0.7)" autoplay="true" circular="true">
       <swiper-item wx:for="{{bannerImg}}">
-        <image src="{{item}}" mode="aspectFill"></image>
+        <image src="{{item.img}}" mode="aspectFill"></image>
       </swiper-item>
     </swiper>
     <view id="entranceSheet">
@@ -25,7 +43,7 @@
           <view>{{item.user.name}}</view>
         </view>
       </view>
-      <image src="{{item.img}}" mode="aspectFit" class="mainPic"></image>
+      <image src="{{item.img}}" mode="widthFix" class="mainPic"></image>
       <view class="cardText">{{item.text}}</view>
       <view class="bottomBox">
         <view id="likes">点赞：{{item.likes}}</view>

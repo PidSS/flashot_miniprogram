@@ -1,0 +1,126 @@
+<!--pages/home/post/post.wxml-->
+<searchBar></searchBar>
+<view id="outerSheet">
+  <view class="decorationLine"></view>
+  <view id="innerSheet">
+    <!--主内容-->
+
+    <!--第一张卡：正文卡-->
+    <view class="card" id="cardA">
+      <!--卡片顶端信息栏-->
+      <view id="infoBoxes">
+        <view id="cmtInfoBox">
+          <image src="{{postData.cmtInfo.icon}}" mode="aspectFill"></image>
+          <view>
+            <view>{{postData.cmtInfo.name}}社区</view>
+            <view>成员：{{postData.cmtInfo.members}}</view>
+          </view>
+        </view>
+        <view id="userInfoBox">
+          <image src="{{postData.user.icon}}" mode="aspectFill"></image>
+          <view>
+            <view>{{postData.user.name}}</view>
+            <view>积分：{{postData.user.points}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="devideLine"></view>
+      <!--正文及图片-->
+      <view class="text">{{postData.text}}</view>
+      <block wx:for="{{postData.img}}">
+        <image wx:if="{{index == 0}}" src="{{item}}" mode="widthFix" id="firstImg"></image>
+        <image wx:elif="{{index == postData.img.length-1}}" src="{{item}}" mode="widthFix" id="lastImg"></image>
+        <image wx:else src="{{item}}" mode="widthFix"></image>
+      </block>
+      <!--信息戳-->
+      <view id="infoStamp">
+        <view>发布时间：{{postData.postTime}}</view>
+        <view>阅读：{{postData.read}}</view>
+      </view>
+      <!--点赞和转发-->
+      <view class="bottomBox">
+        <view id="likes">点赞：{{postData.likes}}</view>
+        <view id="forward">转发：{{postData.forward}}</view>
+      </view>
+    </view>
+    
+    <!--第二张卡：问题状态卡-->
+    <view class="card" id="cardB">
+      <view id="statusBox">
+        <view>问题状态：<text>已解决</text></view>
+        <view>+跟进</view>
+      </view>
+      <view class="devideLine"></view>
+      <!--分类讨论-->
+      <view wx:for="{{postData.statusList}}">
+        <!--1.发布-->
+        <bolck wx:if="{{item.class == '发布'}}">
+          <view class="statusLine">
+            <view class="dot" style="background-color: rgb(238, 181, 76);"></view>
+            <view class="status">{{item.class}}</view>
+            <view>{{item.time}}</view>
+            <view class="posterInfo">
+              <view>{{item.user.name}}</view>
+              <image src="{{item.user.icon}}" mode="aspectFill"></image>
+            </view>
+          </view>
+          <view class="statusText">{{item.text}}</view>
+        </bolck>
+        <!--2.接收-->
+        <bolck wx:elif="{{item.class == '接收'}}">
+          <view class="statusLine">
+            <view class="dot" style="background-color: rgb(69, 159, 238);"></view>
+            <view class="status">{{item.class}}</view>
+            <view>{{item.time}}</view>
+            <view class="posterInfo">
+              <view>{{item.user.name}}</view>
+              <image src="{{item.user.icon}}" mode="aspectFill"></image>
+            </view>
+          </view>
+          <view class="statusText">{{item.text}}</view>
+        </bolck>
+        <!--3.解决-->
+        <bolck wx:elif="{{item.class == '解决'}}">
+          <view class="statusLine">
+            <view class="dot" style="background-color: rgb(0, 170, 144);"></view>
+            <view class="status">{{item.class}}</view>
+            <view>{{item.time}}</view>
+            <view class="posterInfo">
+              <view>{{item.user.name}}</view>
+              <image src="{{item.user.icon}}" mode="aspectFill"></image>
+            </view>
+          </view>
+          <view class="statusText">{{item.text}}</view>
+        </bolck>
+        <!--4.关闭-->
+        <bolck wx:elif="{{item.class == '关闭'}}">
+          <view class="statusLine">
+            <view class="dot" style="background-color: rgb(157,157,157);"></view>
+            <view class="status">{{item.class}}</view>
+            <view>{{item.time}}</view>
+            <view class="posterInfo">
+              <view>{{item.user.name}}</view>
+              <image src="{{item.user.icon}}" mode="aspectFill"></image>
+            </view>
+          </view>
+          <view class="statusText">{{item.text}}</view>
+        </bolck>
+        <!--5.追问-->
+        <bolck wx:elif="{{item.class == '追问'}}">
+          <view class="statusLine">
+            <view class="dot" style="background-color: rgb(147, 111, 214);"></view>
+            <view class="status">{{item.class}}</view>
+            <view>{{item.time}}</view>
+            <view class="posterInfo">
+              <view>{{item.user.name}}</view>
+              <image src="{{item.user.icon}}" mode="aspectFill"></image>
+            </view>
+          </view>
+          <view class="statusText">{{item.text}}</view>
+        </bolck>
+      </view>
+    </view>
+
+    <!--第三张卡：评论区-->
+  </view>
+</view>
