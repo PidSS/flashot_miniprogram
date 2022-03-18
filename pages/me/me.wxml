@@ -1,0 +1,12 @@
+<!--pages/me/me.wxml-->
+<searchBar></searchBar>
+<view class="card" id="cardA">
+  <image id="headImage" mode="aspectFill"></image>
+  <image id="icon" mode="scaleToFill"></image>
+  <view id="username">芜湖小司马</view>
+  <view id="space"></view>
+  <block wx:for="{{[1,2,3,4,5]}}">
+    <view class="line"></view>
+    <view  class="buttons">我的账户</view>
+  </block>
+</view>

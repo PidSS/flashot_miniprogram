@@ -1,8 +1,11 @@
 {
   "pages":[
-    "pages/communities/communities",
+    "pages/messages/messages",
     "pages/post/post",
     "pages/home/world/world",
+    "pages/me/me",
+    "pages/camera/camera",
+    "pages/communities/communities",
     "pages/home/following/following",
     "pages/logs/logs"
   ],

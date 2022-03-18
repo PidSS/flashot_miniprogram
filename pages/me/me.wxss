@@ -1,0 +1,67 @@
+/* pages/me/me.wxss */
+page{
+  background-color: #f4f4f4;
+}
+
+#cardA{
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin: 0;
+  padding-bottom: 12px;
+  transform:translateX(-50%);
+  overflow: hidden;
+}
+
+#headImage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 371rpx;
+  background-color: rgba(127, 255, 212, 0.603);
+}
+
+#icon{
+  position: absolute;
+  top: 371rpx;
+  right: 24px;
+  transform: translateY(-64px);
+  height: 128px;
+  width: 128px;
+  border-radius: 64px;
+  background-color: rgba(45, 196, 255, 0.651);
+  box-shadow: 0 0 23px 0 rgba(153,177,173,0.38);
+}
+
+#username{
+  position: absolute;
+  top: 371rpx;
+  width: calc(660rpx - 182px);
+  line-height: 64px;
+  font-size: 24px;
+  color: rgb(0,170,144);
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 0 12px rgba(153,177,173,0.38);
+}
+
+#space{
+  height:520rpx;
+}
+
+.line{
+  width: 100%;
+  height: 2px;
+  background-color: rgba(153,177,173,0.38);
+}
+
+.buttons{
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(145,145,145);
+}
