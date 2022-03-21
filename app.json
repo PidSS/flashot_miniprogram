@@ -1,14 +1,35 @@
 {
   "pages":[
+    "pages/home/world/world",
     "pages/messages/messages",
     "pages/post/post",
-    "pages/home/world/world",
     "pages/me/me",
     "pages/camera/camera",
     "pages/communities/communities",
     "pages/home/following/following",
     "pages/logs/logs"
   ],
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/world/world"
+      },
+      {
+        "pagePath": "pages/communities/communities"
+      },
+      {
+        "pagePath": "pages/messages/messages"
+      },
+      {
+        "pagePath": "pages/me/me"
+      }
+    ]
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationStyle": "custom",

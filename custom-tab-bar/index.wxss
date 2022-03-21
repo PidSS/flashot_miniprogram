@@ -1,0 +1,89 @@
+.tab-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  padding: 0 20rpx env(safe-area-inset-bottom);
+  border-radius: 24px 24px 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: rgba(255,255,255,0.45);
+  backdrop-filter: blur(18px) brightness(98%);
+  box-shadow: 0 0 8px 0 rgba(153,177,173,45%);
+  overflow: visible;
+}
+
+.shotButton{
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: -16px;
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  background-color: rgb(0,170,144);
+  box-shadow: 0 0 18px 0 rgba(0,181,154,64%);
+}
+
+.shotButton cover-image, .shotButton image{
+  position: fixed;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.fakeShotButton{
+  content: "";
+  flex-shrink: 0;
+  width: 72px;
+  height: 100%;
+}
+
+.smallDiv{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tabBarItem{
+  position: relative;
+  width: 48px;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabBarItem cover-image, .tabBarItem image{
+  margin: 0;
+  width: 23px;
+  height: 28px;
+}
+
+.tabBarItem cover-view, .tabBarItem view{
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
+  color: rgb(112,112,112);
+  font-weight: bold;
+}
+
+.indiactor{
+  position: absolute;
+  width: 45px;
+  height: 56px;
+  transform: translate(-50%,-48%);
+  top: 50%;
+  left: 50%;
+  border-radius: 23px;
+  background-color: rgba(0,170,144,35%);
+  filter: blur(4px);
+}

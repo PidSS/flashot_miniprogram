@@ -1,11 +1,10 @@
 // pages/me/me.js
-Page({
-
+Component({
   /**
    * 页面的初始数据
    */
   data: {
-
+    userBackground: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/aw-anqi-squall-for-internet.jpeg"
   },
 
   /**
@@ -62,5 +61,16 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  pageLifetimes: {
+    show() {
+      if (typeof this.getTabBar === 'function' &&
+        this.getTabBar()) {
+        this.getTabBar().setData({
+          selected: "me"
+        })
+      }
+    }
   }
 })

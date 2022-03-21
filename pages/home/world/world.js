@@ -1,5 +1,5 @@
 // pages/home/world/world.js
-Page({
+Component({
 
   /**
    * 页面的初始数据
@@ -222,5 +222,16 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  pageLifetimes: {
+    show() {
+      if (typeof this.getTabBar === 'function' &&
+        this.getTabBar()) {
+        this.getTabBar().setData({
+          selected: "home"
+        })
+      }
+    }
   }
 })

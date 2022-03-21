@@ -1,0 +1,36 @@
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<view class="tab-bar">
+  <view class="smallDiv">
+    <!--主页-->
+    <view class="tabBarItem" data-url="{{home.url}}" data-option="home" bind:tap="switchTab">
+      <view wx:if="{{selected=='home'}}" class="indiactor"></view>
+      <image src="{{home.icon}}"></image>
+      <view>主页</view>
+    </view>
+    <!--社区-->
+    <view class="tabBarItem" data-url="{{community.url}}" data-option="community" bind:tap="switchTab">
+      <view wx:if="{{selected=='community'}}" class="indiactor"></view>
+      <image src="{{community.icon}}"></image>
+      <view>社区</view>
+    </view>
+  </view>
+  <!--拍照-->
+  <view class="shotButton" bind:tap="toCamera">
+    <image src="{{shot.icon}}" mode="aspectFill"></image>
+  </view>
+  <view class="fakeShotButton"></view>
+  <view class="smallDiv">
+    <!--消息-->
+    <view class="tabBarItem" data-url="{{message.url}}" data-option="message" bind:tap="switchTab">
+      <view wx:if="{{selected=='message'}}" class="indiactor"></view>
+      <image src="{{message.icon}}"></image>
+      <view>消息</view>
+    </view>
+    <!--我的-->
+    <view class="tabBarItem" data-url="{{me.url}}" data-option="me" bind:tap="switchTab">
+      <view wx:if="{{selected=='me'}}" class="indiactor"></view>
+      <image src="{{me.icon}}"></image>
+      <view>我的</view>
+    </view>
+  </view>
+</view>
