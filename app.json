@@ -4,8 +4,8 @@
     "pages/messages/messages",
     "pages/post/post",
     "pages/me/me",
-    "pages/camera/camera",
     "pages/communities/communities",
+    "pages/camera/camera",
     "pages/home/following/following",
     "pages/logs/logs"
   ],

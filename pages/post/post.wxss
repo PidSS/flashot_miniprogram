@@ -123,7 +123,13 @@ page{
 .bottomBox view{
   width: 100%;
   height: 100%;
+  font-weight: bold;
+  color: rgb(0,170,144);
   text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #likes, #forward{
@@ -138,6 +144,20 @@ page{
 
 #forward{
   border-style: none none none solid;
+}
+
+.bottomBox > view > image{
+  margin-right: 8px;
+}
+
+#likes > image{
+  width: 22px;
+  height: 22px;
+}
+
+#forward > image{
+  width: 20px;
+  height: 20px;
 }
 
 #cardB{

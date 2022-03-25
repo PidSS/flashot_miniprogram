@@ -141,7 +141,32 @@ page{
 .bottomBox view{
   width: 100%;
   height: 100%;
+  font-weight: bold;
+  color: rgb(0,170,144);
   text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomBox > view > image{
+  margin-right: 8px;
+}
+
+#likes > image{
+  width: 22px;
+  height: 22px;
+}
+
+#follows > image{
+  width: 24px;
+  height: 24px;
+}
+
+#comments > image{
+  width: 20px;
+  height: 20px;
 }
 
 #follows{

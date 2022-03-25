@@ -84,6 +84,6 @@
   top: 50%;
   left: 50%;
   border-radius: 23px;
-  background-color: rgba(0,170,144,35%);
+  background-color: rgba(0,170,144,25%);
   filter: blur(4px);
 }

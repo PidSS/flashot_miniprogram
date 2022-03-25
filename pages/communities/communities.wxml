@@ -8,24 +8,13 @@
     <!--我的社区-->
     <view class="card" id="cardMyCmt">
       <view>我的社区</view>
-      <scroll-view class="groove" scroll-x="ture" enhanced="true" show-scrollbar="false">
+      <scroll-view class="groove" scroll-x="ture" enhanced="true" show-scrollbar="{{false}}">
         <view class="scroll-space"></view>
-        <view class="scroll-item">
-          <image mode="aspectFill"></image>
-          <view>基础学部基础学社区</view>
-          <view>成员：306</view>
-          <view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</view>
-        </view>
-        <view class="scroll-item">
-          <image mode="aspectFill"></image>
-          <view>基础学部基础学社区</view>
-          <view>成员：306</view>
-          <view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</view>
-        </view><view class="scroll-item">
-          <image mode="aspectFill"></image>
-          <view>基础学部基础学社区</view>
-          <view>成员：306</view>
-          <view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</view>
+        <view  wx:for="{{myCmtInfo}}" class="scroll-item">
+          <image src="{{item.icon}}" mode="aspectFill"></image>
+          <view>{{item.name}}社区</view>
+          <view>成员：{{item.members}}</view>
+          <view>{{item.about}}</view>
         </view>
         <view class="scroll-space"></view>
       </scroll-view>
@@ -33,25 +22,14 @@
 
     <!--我关注的-->
     <view class="card" id="cardMyDescriptions">
-      <view>我的社区</view>
-      <scroll-view class="groove" scroll-x="ture" enhanced="true" show-scrollbar="false">
+      <view>我关注的</view>
+      <scroll-view class="groove" scroll-x="ture" enhanced="true" show-scrollbar="{{false}}">
         <view class="scroll-space"></view>
-        <view class="scroll-item">
-          <image mode="aspectFill"></image>
-          <view>基础学部基础学社区</view>
-          <view>成员：306</view>
-          <view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</view>
-        </view>
-        <view class="scroll-item">
-          <image mode="aspectFill"></image>
-          <view>基础学部基础学社区</view>
-          <view>成员：306</view>
-          <view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</view>
-        </view><view class="scroll-item">
-          <image mode="aspectFill"></image>
-          <view>基础学部基础学社区</view>
-          <view>成员：306</view>
-          <view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</view>
+        <view  wx:for="{{myDescriptionsInfo}}" class="scroll-item">
+          <image src="{{item.icon}}" mode="aspectFill"></image>
+          <view>{{item.name}}社区</view>
+          <view>成员：{{item.members}}</view>
+          <view>{{item.about}}</view>
         </view>
         <view class="scroll-space"></view>
       </scroll-view>

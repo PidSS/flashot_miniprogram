@@ -21,18 +21,23 @@ module.exports = {
   <view class="smallTab">世界</view>
   <view class="smallTab">我的</view>
   <view id="innerSheet">
+    <!--主内容-->
+    <!--banner-->
     <swiper id="banner" indicator-dots="true" indicator-color="rgba(255,255,255,0.4)" indicator-active-color="rgba(2255,255,255,0.7)" autoplay="true" circular="true">
       <swiper-item wx:for="{{bannerImg}}">
         <image src="{{item.img}}" mode="aspectFill"></image>
       </swiper-item>
     </swiper>
+    <!--功能入口栏-->
     <view id="entranceSheet">
       <view wx:for="{{entranceUnions}}" class="unions">
         <image src="{{item.icon}}" mode="aspectFit"></image>
         <view>{{item.name}}</view>
       </view>
     </view>
-    <view class="card" wx:for="{{cardInfo}}">
+    <!--内容卡片-->
+    <view class="card" wx:for="{{cardInfo}}" data-postid="{{item.postID}}" bind:tap="clickCard"> <!--这里的跳转之后要改成按PostID来-->
+    <!--顶部信息栏-->
       <view class="infoBlock">
         <image src="{{item.cmtInfo.icon}}"mode="aspectFit"></image>
         <view>
@@ -43,12 +48,24 @@ module.exports = {
           <view>{{item.user.name}}</view>
         </view>
       </view>
+      <!--内容图与文本-->
       <image src="{{item.img}}" mode="widthFix" class="mainPic"></image>
       <view class="cardText">{{item.text}}</view>
+      <!--底部按钮栏-->
       <view class="bottomBox">
-        <view id="likes">点赞：{{item.likes}}</view>
-        <view id="follows">跟进：{{item.follows}}</view>
-        <view id="comments">评论：{{item.comments}}</view>
+      <!--点赞-->
+        <view id="likes">
+          <image src="{{likesIcon}}" mode="aspectFill"></image>
+          {{item.likes}}
+        </view>
+        <!--跟进-->
+        <view id="follows">
+          <image src="{{followsIcon}}" mode="aspectFill"></image>
+          {{item.follows}}</view>
+          <!--评论-->
+        <view id="comments">
+          <image src="{{commentsIcon}}" mode="aspectFill"></image>
+          {{item.comments}}</view>
       </view>
     </view>
   </view>

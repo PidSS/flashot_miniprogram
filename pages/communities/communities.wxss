@@ -40,7 +40,9 @@ page{
 .scroll-item{
   position: relative;
   display: inline-block;
+  vertical-align:top;
   width: 144px;
+  min-height: 150px;
   margin: 8px 5px;
   padding: 8px;
   background-color: #ffffff;
@@ -85,7 +87,7 @@ page{
 
 .scroll-item image + view + view + view{
   white-space: normal;
-  margin: 2px 4px;
+  margin: 6px 4px 2px;
   width: 100%;
   height: 64px;
   font-size: 12px;

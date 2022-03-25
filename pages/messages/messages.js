@@ -6,7 +6,103 @@ Component({
    * 页面的初始数据
    */
   data: {
-
+    messageList: [{
+      userInfo: {
+        name: "官方通知",
+        userID: "none",
+        icon: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/公告.svg",
+      },
+      time: "2022-3-14",
+      text: "中期检查要到啦！快来爆肝吧～中期检查要到啦！快来爆肝吧～",
+    },{
+      userInfo: {
+        name: "B03社区",
+        userID: "none",
+        icon: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/B03社区头像.png",
+      },
+      time: "2022-3-13",
+      text: "感谢关注！",
+    },{
+      userInfo: {
+        name: "Pid",
+        userID: "none",
+        icon: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/Pid头像.png",
+      },
+      time: "2022-3-12",
+      text: "同学，您反馈的问题已经处理，请查看！",
+    },{
+      userInfo: {
+        name: "HXD",
+        userID: "none",
+        icon: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/HXD头像.png",
+      },
+      time: "2022-3-11",
+      text: "在吗？能借本工科数学分析教材吗？",
+    },{
+      userInfo: {
+        name: "官方通知",
+        userID: "none",
+        icon: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/公告.svg",
+      },
+      time: "2022-3-14",
+      text: "中期检查要到啦！快来爆肝吧～中期检查要到啦！快来爆肝吧～",
+    },{
+      userInfo: {
+        name: "官方通知",
+        userID: "none",
+        icon: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/公告.svg",
+      },
+      time: "2022-3-14",
+      text: "中期检查要到啦！快来爆肝吧～中期检查要到啦！快来爆肝吧～",
+    },{
+      userInfo: {
+        name: "官方通知",
+        userID: "none",
+        icon: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/公告.svg",
+      },
+      time: "2022-3-14",
+      text: "中期检查要到啦！快来爆肝吧～中期检查要到啦！快来爆肝吧～",
+    },{
+      userInfo: {
+        name: "官方通知",
+        userID: "none",
+        icon: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/公告.svg",
+      },
+      time: "2022-3-14",
+      text: "中期检查要到啦！快来爆肝吧～中期检查要到啦！快来爆肝吧～",
+    },{
+      userInfo: {
+        name: "官方通知",
+        userID: "none",
+        icon: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/公告.svg",
+      },
+      time: "2022-3-14",
+      text: "中期检查要到啦！快来爆肝吧～中期检查要到啦！快来爆肝吧～",
+    },{
+      userInfo: {
+        name: "官方通知",
+        userID: "none",
+        icon: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/公告.svg",
+      },
+      time: "2022-3-14",
+      text: "中期检查要到啦！快来爆肝吧～中期检查要到啦！快来爆肝吧～",
+    },{
+      userInfo: {
+        name: "官方通知",
+        userID: "none",
+        icon: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/公告.svg",
+      },
+      time: "2022-3-14",
+      text: "中期检查要到啦！快来爆肝吧～中期检查要到啦！快来爆肝吧～",
+    },{
+      userInfo: {
+        name: "官方通知",
+        userID: "none",
+        icon: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/公告.svg",
+      },
+      time: "2022-3-14",
+      text: "中期检查要到啦！快来爆肝吧～中期检查要到啦！快来爆肝吧～",
+    }]
   },
 
   /**

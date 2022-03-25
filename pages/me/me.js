@@ -4,7 +4,23 @@ Component({
    * 页面的初始数据
    */
   data: {
-    userBackground: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/aw-anqi-squall-for-internet.jpeg"
+    userBackground: "cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/aw-anqi-squall-for-internet.jpeg",
+    entrances: [{
+      name: "我的账户",
+      link: "",
+    },{
+      name: "个人信息",
+      link: "",
+    },{
+      name: "我的发布",
+      link: "",
+    },{
+      name: "最近浏览",
+      link: "",
+    },{
+      name: "其他",
+      link: "",
+    }]
   },
 
   /**

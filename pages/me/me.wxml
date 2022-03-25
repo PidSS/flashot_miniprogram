@@ -2,11 +2,11 @@
 <searchBar></searchBar>
 <view class="card" id="cardA">
   <image id="headImage"  src="cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/aw-anqi-squall-for-internet.jpeg" mode="aspectFill"></image>
-  <image id="icon" mode="scaleToFill"></image>
+  <image id="icon" src="cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/dao-trong-le-poro-sled.jpeg" mode="scaleToFill"></image>
   <view id="username">芜湖小司马</view>
   <view id="space"></view>
-  <block wx:for="{{[1,2,3,4,5]}}">
+  <block wx:for="{{entrances}}">
     <view class="line"></view>
-    <view  class="buttons">我的账户</view>
+    <view  class="buttons">{{item.name}}</view>
   </block>
 </view>

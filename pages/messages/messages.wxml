@@ -4,12 +4,12 @@
   <view class="decorationLine"></view>
   <view id="innerSheet">
   <view class="space1"></view>
-  <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}" class="closerCard">
-    <image src="cloud://cloud1-7g8nzm85f25b63a8.636c-cloud1-7g8nzm85f25b63a8-1309182985/resources/images/公告.svg" mode="aspectFill"></image>
+  <view wx:for="{{messageList}}" class="closerCard">
+    <image src="{{item.userInfo.icon}}" mode="aspectFill"></image>
     <view>
-      <view class="senderName">官方通知<text>2022-3-14</text></view>
+      <view class="senderName">{{item.userInfo.name}}<text>{{item.time}}</text></view>
       <view class="space2"></view>
-      <view class="text">中期检查要到啦！快来爆肝吧～中期检查要到啦！快来爆肝吧～</view>
+      <view class="text">{{item.text}}</view>
     </view>
   </view>
   </view>

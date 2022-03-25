@@ -1,2 +1,28 @@
 <!--pages/camera/camera.wxml-->
-<camera></camera>
+<camera device-position="{{cameraSelected}}"></camera>
+<view id="blur">
+  <view id="wideBlur">
+    <image src="{{albumIcon}}" mode="aspectFill" id="album" bind:tap="callAlbum"></image>
+    <image src="{{tempMedia}}" mode="aspectFill" id="temp"></image>
+  </view>
+  <view id="circleBlur"></view>
+</view>
+
+<view id="buttonOuterCircle"></view>
+<view id="buttonInnerShotCircle"
+  bind:tap="shot"
+  bind:longpress="recordStart"
+  bind:touchend="recordEnd">
+</view>
+
+<view class="topModule">
+  <view id="goBack" bind:tap="back">
+    <image src="{{backIcon}}" mode="aspectFill"></image>
+    返回   
+  </view>
+  <view id="instruction">轻触拍照 长按录像</view>
+  <view id="switch" bind:tap="switchCamera">
+    <image src="{{switchIcon}}" mode="aspectFill"></image>
+  </view>
+  <view id="complete">完成</view>
+</view>

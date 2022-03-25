@@ -39,8 +39,14 @@
       </view>
       <!--点赞和转发-->
       <view class="bottomBox">
-        <view id="likes">点赞：173{{postData.likes}}</view>
-        <view id="forward">转发：228{{postData.forward}}</view>
+        <view id="likes">
+          <image src="{{likesIcon}}" mode="aspectFill"></image>
+          173{{postData.likes}}
+        </view>
+        <view id="forward">
+          <image src="{{forwardIcon}}" mode="aspectFill"></image>
+          228{{postData.forward}}
+        </view>
       </view>
     </view>
     

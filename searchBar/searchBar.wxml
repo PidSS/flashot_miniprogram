@@ -1,1 +1,7 @@
-<input class="inputBar" placeholder="竟有卷王卷至主楼过夜？！" placeholder-class="inputBarText"></input>
+<view class="theBox">
+  <view wx:if="{{isTabBarPage === false}}" class="goBackButton" bind:tap="goBack">
+    <image src="{{backIcon}}" mode="aspectFit"></image>
+  </view>
+  <input class="inputBar" placeholder="竟有卷王卷至主楼过夜？！" placeholder-class="inputBarText"></input>
+</view>
+
